@@ -22,8 +22,7 @@ class RelvPos:
         coords = self.get_coords(origin_point)
         origin_point = coords if coords is not None else self.origin
 
-
-        x0, y0 = self.origin
+        x0, y0 = origin_point
         angle_rad = math.radians(angle)  # convert to radians
         x = round(x0 + distance * math.cos(angle_rad))
         y = round(y0 + distance * math.sin(angle_rad))
